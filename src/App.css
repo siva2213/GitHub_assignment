@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.panel_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.panel {
+  padding: 0.5rem;
+  flex: 30%;
+}
+
+.panel:nth-child(2) {
+  flex: 70%;
+}
+
+@media screen and (max-width: 480px) {
+  .panel_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .panel {
+    padding: 0.5rem;
+  }
+}

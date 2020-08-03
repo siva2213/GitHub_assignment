@@ -1,0 +1,19 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dcd9d9;
+}
+
+.tab {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.tab:hover {
+  border-bottom: 2px solid rgb(223, 218, 218);
+}
+
+.active {
+  font-weight: 600;
+  border-bottom: 2px solid orange;
+}

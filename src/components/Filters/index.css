@@ -1,0 +1,14 @@
+.filter_container {
+  display: flex;
+}
+
+.filter {
+  margin: 0 8px;
+}
+
+.input {
+  width: 60%;
+  border: 1px solid #d2d2d2;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
