@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import TabContainer from "./containers/TabContainer";
 import LeftPanel from "./containers/LeftPanel";
-import RightPanel from "./containers/RightPanel";
+import RightPanel from "./containers/Login";
 import { connect } from "react-redux";
 import Actions from "./actions";
 
@@ -45,6 +45,13 @@ export class App extends Component {
             />
           </div>
         </div>
+        <RightPanel
+              getRepos={
+                this.props.getRepos && this.props.getRepos.length
+                  ? this.props.getRepos
+                  : []
+              }
+            />
       </div>
     );
   }
